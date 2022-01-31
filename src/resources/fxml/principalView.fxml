@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appinformes.PrincipalViewController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="600.0" style="-fx-background-radius: 10;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Informes">
+            <items>
+                  <MenuItem fx:id="menuItem_ListadoFacturas" mnemonicParsing="false" onAction="#generarInformeListadoFacturas" text="Listado Facturas" />
+                  <MenuItem fx:id="menuItem_VentasTotales" mnemonicParsing="false" onAction="#generarInformeVentasTotales" text="Ventas Totales" />
+                  <MenuItem fx:id="menuItem_FacturaPorCliente" mnemonicParsing="false" onAction="#generarFacturaPorCliente" text="Facturas por Cliente" />
+                  <MenuItem fx:id="menuItem_SubInformeListadoFacturas" mnemonicParsing="false" onAction="#generarSubInformeListadoFacturas" text="SubInforme Listado Facturas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda" />
+          <Menu mnemonicParsing="false" text="Salir" />
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="360.0" fitWidth="600.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/informe-1.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
